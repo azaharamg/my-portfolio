@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet/main.css">
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <img src="img/azahara.png" alt="" />
-    </div>
     <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
+      <i class="fas fa-bars menu"></i>
     </button>
     <nav class="nav">
       <ul class="nav__list">
@@ -31,28 +31,29 @@
   <!-- Introduction-->
   <section class="intro" id="home">
     <h1 class="section__title section__title--intro">Hi, I am <strong>Azahara Martínez</strong></h1>
-    <p class="section__subtitle section__subtitle--intro">Frontend Dev</p>
-    <img src="img/dev-azahara-01.jpg" alt="a photo of Azahara" />
+    <p class="section__subtitle section__subtitle--intro">Frontend Developer</p>
+    <img class="intro__img" src="img/dev-azahara-01.jpg" alt="a photo of Azahara" />
   </section>
 
   <!-- My services-->
-  <section class="my-services id=" services">
+  <section class="my-services" id="services">
     <h2 class="section__title section__title--services">What I do</h2>
     <div class="services">
 
       <div class="service">
         <h3>HTML / CSS</h3>
-        <img src="" alt="">
+        <i class="fab fa-html5 icons"></i>
+        <i class="fab fa-css3-alt icons"></i>
       </div>
 
       <div class="service">
         <h3>JavaScript</h3>
-        <img src="" alt="">
+        <i class="fab fa-js icons"></i>
       </div>
 
       <div class="service">
         <h3>React & Redux</h3>
-        <img src="" alt="">
+        <i class="fab fa-react icons"></i>
       </div>
 
     </div>
@@ -62,45 +63,153 @@
   <!-- About me-->
   <section class="about-me" id="about">
     <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about"></p>
+    <p class="section__subtitle section__subtitle--about">Developer, with strong analytical mindset, dedication to learn
+      something new every day, empathy, team player and an adventurous person.</p>
 
     <div class="about-me__body">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga earum magni laudantium sunt. Ipsa voluptas modi
-        delectus fugiat consequatur error nemo pariatur! Labore ut veniam repudiandae eaque porro maxime soluta?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit illum molestias sit provident esse, et ratione.
-        Facere, tempora quaerat est accusantium veniam, tempore magnam inventore aperiam animi, cupiditate reiciendis
-        delectus!</p>
+      <p>Bachelor of Pharmacy and specialized in Molecular Biology. After working as a pharmacist during years, I
+        decided to learn Web Development, because I love transforming designs into interactive applications that can be
+        used by many people.</p>
+      <p>I did an intensive Frontend Development course in Adalab where I trained in various technologies (<strong>HTML,
+          CSS, JS, React</strong>) and in Agile and Scrum.</p>
     </div>
 
-    <img src="img/azahara-02.jpg" alt="About Me">
+    <img src="img/azahara-02.jpg" alt="About Me" class="about-me__img">
   </section>
 
   <!--My Work-->
   <section class="my-word" id="work">
-    <h2 class="section__title">My work</h2>
-    <p class="section__subtitle"></p>
+    <h2 class="section__title--work">My work</h2>
+    <p class="section__subtitle--work">A selection of my projects</p>
 
     <div class="portfolio">
       <!--Portfolio item 01-->
-      <a href="#" class="portfolio__item">
-        <img src="img/portfolio.jpg" alt="" class="portfolio__img">
-      </a>
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+            <h3>MadEvents</h3>
+            <p>Wep application developer in React to find events in Madrid.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/madevents" target="_blank" class="portfolio__links-link"><i
+                class="fab fa-github"></i></a>
+            <a href="https://madevents.herokuapp.com/" target="_blank" class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
 
       <!--Portfolio item 02-->
-      <a href="#" class="portfolio__item">
-        <img src="img/portfolio.jpg" alt="" class="portfolio__img">
-      </a>
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>Weather app</h3>
+          <p>Web application developed in React, with Hooks, to check what's the weather like anywhere in the world.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/Weather-app" target="_blank" class="portfolio__links-link"><i
+                class="fab fa-github"></i></a>
+            <a href="https://advice-weather-app.herokuapp.com/" target="_blank" class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Portfolio item 03-->
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>Rock, Paper and Scissors Game</h3>
+          <p>It is a front-end coding challenge from Frontend Mentor to improve my programming skills(HTML, Sass,
+            JavaScript, ZEIT).</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/rock-paper-scissors" target="_blank" class="portfolio__links-link"><i
+                class="fab fa-github"></i></a>
+            <a href="https://rock-paper-scissors-41tkr7amz.now.sh/" target="_blank"
+              class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Portfolio item 04-->
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>To Do List</h3>
+          <p>Web application developed in React and Redux to write down tasks that the user wants to do.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/todo-list" target="_blank" class="portfolio__links-link"><i
+                class="fab fa-github"></i></a>
+            <a href="https://azaharamg.github.io/todo-list/" target="_blank" class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Portfolio item 05-->
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>Rick and Morty</h3>
+          <p>Single Page Application in React to look for Rick and Morty's characters.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/modulo-3-evaluacion-final-azaharamg" target="_blank"
+              class="portfolio__links-link"><i class="fab fa-github"></i></a>
+            <a href="http://beta.adalab.es/modulo-3-evaluacion-final-azaharamg/" target="_blank"
+              class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Portfolio item 06-->
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>Search TV & Movies</h3>
+          <p>Web Application developer in JavaScript to search TV Shows and films.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/modulo-2-evaluacion-final-azaharamg" target="_blank"
+              class="portfolio__links-link"><i class="fab fa-github"></i></a>
+            <a href="http://beta.adalab.es/modulo-2-evaluacion-final-azaharamg/" target="_blank"
+              class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Portfolio item 07-->
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>Awesome Profile Cards</h3>
+          <p>Web Application developer in React in a team of 5 persons.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/project-promo-h-modulo-3-team-3-morning" target="_blank"
+              class="portfolio__links-link"><i class="fab fa-github"></i></a>
+            <a href="http://beta.adalab.es/modulo-2-evaluacion-final-azaharamg/" target="_blank"
+              class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Portfolio item 08-->
+      <div class="portfolio__card">
+        <div class="portfolio__item">
+          <h3>Guess The Number Game</h3>
+          <p>Web Application to guess the number.</p>
+          <div class="portfolio__links">
+            <a href="https://github.com/azaharamg/evaluacion-intermedia-modulo-2-azaharamg" target="_blank"
+              class="portfolio__links-link"><i class="fab fa-github"></i></a>
+            <a href="http://beta.adalab.es/evaluacion-intermedia-modulo-2-azaharamg/" target="_blank"
+              class="portfolio__links-button">View</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!--Footer-->
-  <footer>
-    <a href="mailto:azaharamaga@gmail.com" class="footer__link">azaharamaga@gmail.com</a>
+  <footer class="footer">
+
     <ul class="social-list">
-      <li class="social-list__item"><a href="https://www.linkedin.com/in/azaharamartinezgarcia/"
-          class="social-list__link">LinkedIn</a></li>
-      <li class="social-list__item"><a href="https://github.com/azaharamg" class="social-list__link">GitHub</a></li>
+      <li class="social-list__item"><a href="mailto:azaharamaga@gmail.com" class="social-list__link"><i
+            class="fas fa-envelope"></i></a></li>
+      <li class="social-list__item"><a href="https://www.linkedin.com/in/azaharamartinezgarcia/" target="_blank"
+          class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+      <li class="social-list__item"><a href="https://github.com/azaharamg" target="_blank" class="social-list__link"><i
+            class="fab fa-github"></i></a></li>
     </ul>
+
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
