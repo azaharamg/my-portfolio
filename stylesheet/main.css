@@ -378,8 +378,8 @@ header {
 /* My Work */
 
 .my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .section__title--work {
